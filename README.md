@@ -1,51 +1,57 @@
-# Homework 4
+# Homework: 5
 
-### Tuple Exercises
+## Basic Exercises
 
-1. **Create a Tuple**
+1. **Logical Operations**
 
-   - Create a tuple literal named `cardinal_numbers` that holds the strings "first", "second", and "third", in that order.
+   - Write a program that checks if a number entered by the user is positive and even. If it is, print "The number is positive and even." Otherwise, print "The number is not positive and even."
 
-2. **Access Tuple Element**
+2. **Logical AND**
 
-   - Using index notation and `print()`, display the string at index 1 in `cardinal_numbers`.
+   - Create a program that takes two inputs from the user. If both inputs are greater than 10, print "Both numbers are greater than 10." Otherwise, print "At least one number is not greater than 10."
 
-3. **Unpack Tuple**
+3. **Logical OR**
 
-   - In a single line of code, unpack the values in `cardinal_numbers` into three new strings named `position1`, `position2`, and `position3`. Then print each value on a separate line.
+   - Write a program that asks the user for their age and whether they have a driver's license (yes or no). If they are at least 18 years old or they have a driver's license, print "You are allowed to drive." Otherwise, print "You are not allowed to drive."
 
-4. **Create Tuple from String**
+4. **Logical NOT**
 
-   - Using `tuple()` and a string literal, create a tuple called `my_name` that contains the letters of your name.
+   - Create a program that asks the user if it is raining (yes or no). If it is not raining, print "You can go outside." Otherwise, print "You should stay inside."
 
-5. **Check for Character**
+5. **If, Else**
 
-   - Check whether the character "x" is in `my_name` using the `in` keyword.
+   - Write a program that asks the user for a grade (0-100). If the grade is 60 or above, print "Pass". Otherwise, print "Fail".
 
-6. **Slice Tuple**
-   - Create a new tuple containing all but the first letter in `my_name` using slice notation.
+6. **If, Elif, Else**
 
-### Dictionary Exercises
+   - Create a program that asks the user for a number. If the number is positive, print "The number is positive." If the number is zero, print "The number is zero." If the number is negative, print "The number is negative."
 
-1. **Create a Dictionary**
+7. **Leap Year Checker**
 
-   - Create a dictionary named `student` with the keys "name", "age", and "courses". The values should be your name, your age, and a list of your courses.
+   - Write a program to check if a given year is a leap year. A year is a leap year if it is divisible by 4 but not by 100, except if it is also divisible by 400.
 
-2. **Access Dictionary Value**
+## Optional
 
-   - Using the dictionary `student`, print the value associated with the key "name".
+1. **Grade Categories**
 
-3. **Add a New Key-Value Pair**
+   - Write a program that asks the user for their grade (0-100). Print the following based on the input:
+     - "A" for grades 90 and above
+     - "B" for grades 80-89
+     - "C" for grades 70-79
+     - "D" for grades 60-69
+     - "F" for grades below 60
 
-   - Add a new key-value pair to the `student` dictionary with the key "grade" and a value of your grade in one of the courses.
+2. **Divisibility Check**
 
-4. **Update a Value**
+   - Create a program that asks the user for a number. If the number is divisible by both 3 and 5, print "FizzBuzz". If it is only divisible by 3, print "Fizz". If it is only divisible by 5, print "Buzz". Otherwise, print the number.
 
-   - Update the value associated with the key "age" in the `student` dictionary to a new value (e.g., next year's age).
+3. **Voting Eligibility**
 
-5. **Delete a Key-Value Pair**
+   - Write a program that checks if a user is eligible to vote. A user is eligible if they are at least 18 years old and a citizen (yes or no). Print "Eligible to vote" or "Not eligible to vote" based on the inputs.
 
-   - Remove the key "courses" from the `student` dictionary.
-
-6. **Dictionary Length**
-   - Print the number of key-value pairs in the `student` dictionary using `len()`.
+4. **BMI Calculator**
+   - Create a program that calculates the Body Mass Index (BMI) given the user's weight in kilograms and height in meters. Print the category of BMI based on the following:
+     - "Underweight" for BMI less than 18.5
+     - "Normal weight" for BMI 18.5-24.9
+     - "Overweight" for BMI 25-29.9
+     - "Obesity" for BMI 30 and above
