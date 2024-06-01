@@ -1,58 +1,74 @@
-# Homework: Loops
+# Homework: List and Dictionary Comprehensions
 
 ## Basic Exercises
 
-### For Loop Exercises
+### List Comprehensions
 
-1. **Print Numbers**
+1. **Square Numbers**
 
-   - Write a `for` loop to print numbers from 1 to 10.
+   - Write a list comprehension to create a list of squares of the numbers from 1 to 10.
 
-2. **Sum of List**
+2. **Even Numbers**
 
-   - Given a list of numbers, `[1, 2, 3, 4, 5]`, write a `for` loop to calculate and print the sum of the numbers.
+   - Write a list comprehension to create a list of even numbers from 1 to 20.
 
-3. **Even Numbers**
+3. **Length of Strings**
 
-   - Write a `for` loop to print all the even numbers from 1 to 20.
+   - Given a list of strings, use a list comprehension to create a list of their lengths.
+     ```python
+     words = ["hello", "world", "python", "list", "comprehension"]
+     ```
 
-4. **Characters in String**
+4. **Uppercase Strings**
 
-   - Write a `for` loop to iterate through the string "Python" and print each character.
+   - Write a list comprehension to convert each string in a list to uppercase.
+     ```python
+     fruits = ["apple", "banana", "cherry"]
+     ```
 
-5. **Multiplication Table**
+5. **Filtered Squares**
 
-   - Write a program to print the multiplication table of 5 using a `for` loop.
+   - Write a list comprehension to create a list of squares of even numbers from 1 to 10.
 
-6. **Reverse a String**
-   - Write a `for` loop to reverse the string "hello" and print the reversed string.
+6. **Flatten a List**
+   - Given a list of lists, use a list comprehension to create a flat list.
+     ```python
+     nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+     ```
 
-### While Loop Exercises
+### Dictionary Comprehensions
 
-1. **Print Numbers**
+1. **Square Numbers Dictionary**
 
-   - Write a `while` loop to print numbers from 1 to 10.
+   - Write a dictionary comprehension to create a dictionary where the keys are numbers from 1 to 5 and the values are their squares.
 
-2. **Sum of Numbers**
+2. **Length of Words**
 
-   - Write a `while` loop to calculate and print the sum of numbers from 1 to 10.
+   - Given a list of words, use a dictionary comprehension to create a dictionary with the words as keys and their lengths as values.
+     ```python
+     words = ["hello", "world", "python", "dictionary", "comprehension"]
+     ```
 
-3. **Guessing Game**
+3. **Uppercase Words Dictionary**
 
-   - Create a simple guessing game using a `while` loop where the user has to guess a predefined number (e.g., 7). The loop should continue until the user guesses the correct number.
+   - Write a dictionary comprehension to create a dictionary where the keys are words and the values are the words in uppercase.
+     ```python
+     fruits = ["apple", "banana", "cherry"]
+     ```
 
-4. **Factorial**
+4. **Filtered Dictionary**
 
-   - Write a program to calculate the factorial of a number using a `while` loop.
+   - Given a dictionary of items and their prices, use a dictionary comprehension to create a new dictionary with only items that cost more than 50.
+     ```python
+     prices = {"apple": 30, "banana": 20, "cherry": 60, "date": 50, "fig": 70}
+     ```
 
-5. **Count Down**
+5. **ASCII Values**
 
-   - Write a `while` loop to count down from 10 to 1, and then print "Happy New Year!"
+   - Write a dictionary comprehension to create a dictionary where the keys are characters from 'a' to 'e' and the values are their corresponding ASCII values.
 
-6. **Sum of Digits**
-   - Write a `while` loop to find the sum of the digits of a given number.
-
-## Optional
-
-1. https://www.hackerrank.com/challenges/python-loops/problem
-2. https://pynative.com/python-if-else-and-for-loop-exercise-with-solutions/
+6. **Inverted Dictionary**
+   - Given a dictionary, use a dictionary comprehension to create a new dictionary where the keys and values are swapped.
+     ```python
+     original_dict = {"a": 1, "b": 2, "c": 3}
+     ```
