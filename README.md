@@ -1,74 +1,86 @@
-# Homework: List and Dictionary Comprehensions
+# Homework: Functions and Lambda Functions
 
 ## Basic Exercises
 
-### List Comprehensions
+### Functions
 
-1. **Square Numbers**
+1. **Basic Function**
 
-   - Write a list comprehension to create a list of squares of the numbers from 1 to 10.
+   - Write a function `greet` that takes a name as an argument and prints "Hello, [name]!".
 
-2. **Even Numbers**
+2. **Sum Function**
 
-   - Write a list comprehension to create a list of even numbers from 1 to 20.
+   - Write a function `sum_numbers` that takes two numbers as arguments and returns their sum.
 
-3. **Length of Strings**
+3. **Square Function**
 
-   - Given a list of strings, use a list comprehension to create a list of their lengths.
+   - Write a function `square` that takes a number as an argument and returns its square.
+
+4. **List of Squares**
+
+   - Write a function `list_of_squares` that takes a list of numbers and returns a new list with the squares of those numbers.
+
+5. **Factorial Function**
+
+   - Write a function `factorial` that takes a number as an argument and returns its factorial.
+
+6. **Palindrome Checker**
+   - Write a function `is_palindrome` that takes a string and returns `True` if the string is a palindrome and `False` otherwise.
+
+### Lambda Functions
+
+1. **Square Lambda**
+
+   - Write a lambda function that takes a number and returns its square. Assign it to a variable named `square_lambda`.
+
+2. **Sum Lambda**
+
+   - Write a lambda function that takes two numbers and returns their sum. Assign it to a variable named `sum_lambda`.
+
+3. **Even Numbers Filter**
+
+   - Use a lambda function with the `filter` function to filter out even numbers from a list of numbers.
      ```python
-     words = ["hello", "world", "python", "list", "comprehension"]
+     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
      ```
 
-4. **Uppercase Strings**
+4. **Length of Strings**
 
-   - Write a list comprehension to convert each string in a list to uppercase.
+   - Use a lambda function with the `map` function to convert a list of strings into a list of their lengths.
      ```python
-     fruits = ["apple", "banana", "cherry"]
+     words = ["apple", "banana", "cherry"]
      ```
 
-5. **Filtered Squares**
+5. **Sort Tuples**
 
-   - Write a list comprehension to create a list of squares of even numbers from 1 to 10.
-
-6. **Flatten a List**
-   - Given a list of lists, use a list comprehension to create a flat list.
+   - Use a lambda function with the `sorted` function to sort a list of tuples based on the second element of each tuple.
      ```python
-     nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+     tuples = [(1, 'one'), (2, 'two'), (3, 'three')]
      ```
 
-### Dictionary Comprehensions
+6. **Conditional Lambda**
+   - Write a lambda function that takes a number and returns "Even" if the number is even and "Odd" if the number is odd. Assign it to a variable named `even_odd_lambda`.
 
-1. **Square Numbers Dictionary**
+## Optional
 
-   - Write a dictionary comprehension to create a dictionary where the keys are numbers from 1 to 5 and the values are their squares.
+1. **Fibonacci Function**
 
-2. **Length of Words**
+   - Write a function `fibonacci` that takes a number `n` and returns a list of the first `n` Fibonacci numbers.
 
-   - Given a list of words, use a dictionary comprehension to create a dictionary with the words as keys and their lengths as values.
+2. **Prime Checker**
+
+   - Write a function `is_prime` that takes a number and returns `True` if the number is prime and `False` otherwise.
+
+3. **List of Primes**
+
+   - Write a function `list_of_primes` that takes a number `n` and returns a list of all prime numbers up to `n`.
+
+4. **Lambda with Multiple Conditions**
+
+   - Write a lambda function that takes a number and returns "Fizz" if it is divisible by 3, "Buzz" if it is divisible by 5, and "FizzBuzz" if it is divisible by both. Assign it to a variable named `fizzbuzz_lambda`.
+
+5. **Lambda and Reduce**
+   - Use a lambda function with the `reduce` function from the `functools` module to find the product of a list of numbers.
      ```python
-     words = ["hello", "world", "python", "dictionary", "comprehension"]
-     ```
-
-3. **Uppercase Words Dictionary**
-
-   - Write a dictionary comprehension to create a dictionary where the keys are words and the values are the words in uppercase.
-     ```python
-     fruits = ["apple", "banana", "cherry"]
-     ```
-
-4. **Filtered Dictionary**
-
-   - Given a dictionary of items and their prices, use a dictionary comprehension to create a new dictionary with only items that cost more than 50.
-     ```python
-     prices = {"apple": 30, "banana": 20, "cherry": 60, "date": 50, "fig": 70}
-     ```
-
-5. **ASCII Values**
-
-   - Write a dictionary comprehension to create a dictionary where the keys are characters from 'a' to 'e' and the values are their corresponding ASCII values.
-
-6. **Inverted Dictionary**
-   - Given a dictionary, use a dictionary comprehension to create a new dictionary where the keys and values are swapped.
-     ```python
-     original_dict = {"a": 1, "b": 2, "c": 3}
+     numbers = [1, 2, 3, 4, 5]
      ```
