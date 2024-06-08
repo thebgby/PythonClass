@@ -1,86 +1,75 @@
-# Homework: Functions and Lambda Functions
+# Homework: Classes in Python
 
 ## Basic Exercises
 
-### Functions
+1. **Create a Simple Class**
 
-1. **Basic Function**
+   - Create a class named `Person` with the following attributes:
+     - `name` (string)
+     - `age` (integer)
+       Add a method `introduce` that prints "Hello, my name is [name] and I am [age] years old."
 
-   - Write a function `greet` that takes a name as an argument and prints "Hello, [name]!".
+2. **Constructor Method**
 
-2. **Sum Function**
+   - Modify the `Person` class to include a constructor (`__init__` method) that initializes the `name` and `age` attributes.
 
-   - Write a function `sum_numbers` that takes two numbers as arguments and returns their sum.
+3. **Class with Multiple Methods**
 
-3. **Square Function**
+   - Create a class named `Rectangle` with the following attributes:
+     - `length` (float)
+     - `width` (float)
+       Add methods to:
+     - Calculate and return the area of the rectangle.
+     - Calculate and return the perimeter of the rectangle.
 
-   - Write a function `square` that takes a number as an argument and returns its square.
+4. **Class Inheritance**
 
-4. **List of Squares**
+   - Create a base class named `Animal` with a method `make_sound` that prints "Some generic sound".
+   - Create a subclass named `Dog` that inherits from `Animal` and overrides the `make_sound` method to print "Bark".
 
-   - Write a function `list_of_squares` that takes a list of numbers and returns a new list with the squares of those numbers.
+5. **Private Attributes and Methods**
 
-5. **Factorial Function**
+   - Create a class named `BankAccount` with the following private attributes:
+     - `__balance` (float)
+       Add methods to:
+     - Deposit an amount to the account.
+     - Withdraw an amount from the account.
+     - Check the account balance.
 
-   - Write a function `factorial` that takes a number as an argument and returns its factorial.
-
-6. **Palindrome Checker**
-   - Write a function `is_palindrome` that takes a string and returns `True` if the string is a palindrome and `False` otherwise.
-
-### Lambda Functions
-
-1. **Square Lambda**
-
-   - Write a lambda function that takes a number and returns its square. Assign it to a variable named `square_lambda`.
-
-2. **Sum Lambda**
-
-   - Write a lambda function that takes two numbers and returns their sum. Assign it to a variable named `sum_lambda`.
-
-3. **Even Numbers Filter**
-
-   - Use a lambda function with the `filter` function to filter out even numbers from a list of numbers.
-     ```python
-     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-     ```
-
-4. **Length of Strings**
-
-   - Use a lambda function with the `map` function to convert a list of strings into a list of their lengths.
-     ```python
-     words = ["apple", "banana", "cherry"]
-     ```
-
-5. **Sort Tuples**
-
-   - Use a lambda function with the `sorted` function to sort a list of tuples based on the second element of each tuple.
-     ```python
-     tuples = [(1, 'one'), (2, 'two'), (3, 'three')]
-     ```
-
-6. **Conditional Lambda**
-   - Write a lambda function that takes a number and returns "Even" if the number is even and "Odd" if the number is odd. Assign it to a variable named `even_odd_lambda`.
+6. **Class with Properties**
+   - Create a class named `Temperature` with a single attribute `celsius` (float).
+     Add a property `fahrenheit` to get the temperature in Fahrenheit using the formula `(celsius * 9/5) + 32`.
+     Add a setter for the `fahrenheit` property to set the temperature in Celsius.
 
 ## Optional
 
-1. **Fibonacci Function**
+1. **Class with Static Method**
 
-   - Write a function `fibonacci` that takes a number `n` and returns a list of the first `n` Fibonacci numbers.
+   - Create a class named `MathUtils` with a static method `add` that takes two numbers and returns their sum.
 
-2. **Prime Checker**
+2. **Class Method**
 
-   - Write a function `is_prime` that takes a number and returns `True` if the number is prime and `False` otherwise.
+   - Create a class named `Employee` with the following attributes:
+     - `name` (string)
+     - `salary` (float)
+       Add a class method `from_string` that takes a string in the format "name,salary" and returns an instance of `Employee`.
 
-3. **List of Primes**
+3. **Magic Methods**
 
-   - Write a function `list_of_primes` that takes a number `n` and returns a list of all prime numbers up to `n`.
+   - Create a class named `Vector` with the following attributes:
+     - `x` (float)
+     - `y` (float)
+       Implement the magic method `__add__` to add two vectors and return a new `Vector` object.
 
-4. **Lambda with Multiple Conditions**
+4. **Context Manager Class**
 
-   - Write a lambda function that takes a number and returns "Fizz" if it is divisible by 3, "Buzz" if it is divisible by 5, and "FizzBuzz" if it is divisible by both. Assign it to a variable named `fizzbuzz_lambda`.
+   - Create a class named `FileHandler` that implements the context manager methods (`__enter__` and `__exit__`) to handle opening and closing a file. Use this class to read the contents of a file.
 
-5. **Lambda and Reduce**
-   - Use a lambda function with the `reduce` function from the `functools` module to find the product of a list of numbers.
-     ```python
-     numbers = [1, 2, 3, 4, 5]
-     ```
+5. **Metaclass**
+
+   - Create a metaclass named `UppercaseMeta` that converts all class attribute names to uppercase.
+
+6. **Dataclass**
+   - Create a class named `Point` using the `dataclasses` module with the attributes:
+     - `x` (float)
+     - `y` (float)
